@@ -1,0 +1,51 @@
+.header{
+    background-color: #EAC926;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 3px;
+}
+p{
+    margin: 0px;
+}
+.logo{
+    padding: 15px;
+    width: 40%;
+    text-align: center;
+}
+
+.formulario{
+    margin: 20px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 768px;
+}
+.texto, .fecha{
+    width: 100%;
+    border: 0px;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    padding: 5px;
+}
+label{
+    font-weight: 600;
+}
+.item{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.boton {
+    border: 0px;
+    padding: 10px;
+    color: #ebebeb;
+    background-color: #0d72df;
+    border-radius: 4px;
+    width: 100%;
+    transition: all 300ms;
+    margin: 20px;
+    margin-right: 30px;
+}
+
+.boton:hover{
+    background-color: #0022AA;
+}

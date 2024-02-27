@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img class = "logo" src="./images/logo-mercado-liebre.svg">
+    </header>
+    <main class="main">
+        <form class="formulario" action="/registro" method="POST">
+
+            <input class="item" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido:" required>
+            
+            <input class="item" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario:" required>
+            
+            <input class="item" type="email" id="email" name="email"  placeholder="Email:" required>
+            
+            <label class="titulo" for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input class="item" type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            
+            <input class="item" type="text" id="domicilio" name="domicilio" placeholder="Domicilio:" required>
+        
+        <div class="perfil-usuario">
+            <label class="titulo" for="perfilUsuario">Perfil del usuario:</label>
+            <input type="radio" name="perfilUsu" value="comprar">Comprar</input>
+            <input type="radio" name="perfilUsu" value="vender">Vender</input>
+        </div>
+        <div class="categoria-inte">
+            <label class="titulo" for="categoriasInteres">Categorías de interés:</label>
+            <input type="checkbox" value="electro">Electro</input>
+            <input type="checkbox" value="moda">Moda</input>
+            <input type="checkbox" value="hogar">Hogar</input>
+            <input type="checkbox" value="jugueteria">Juguetería</input>
+            <input type="checkbox" value="vidaSana">Vida Sana</input>
+        </div>
+            
+            <label class="titulo" for="fotoUsuario">Foto de usuario:</label>
+            <input class="item" type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*" required>
+            
+            <input class="item" type="password" id="contrasena" name="contrasena" placeholder="Contraseña:" required>
+            
+            <input class="item" type="password" id="confirmarContrasena" name="confirmarContrasena" placeholder="Confirmar Contraseña:" required>
+            
+            <button class="item" type="submit">Enviar</button>
+            <button class="item" type="reset">Borrar Datos</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.header{
+    background-color: #EAC926;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 3px;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+.logo{
+    width: 50%;
+}
+.main{
+    background-color: #ebebeb;
+    margin: 0 auto;
+}
+.formulario{
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ebebeb;
+    border-radius: 10px;
+    max-width: 768px;
+}
+p{
+    margin: 0px;
+}
+.texto, .fecha{
+    width: 100%;
+    border: 0px;
+    background-color: #ebebeb;
+    border-radius: 3px;
+    padding: 5px;
+}
+label{
+    font-weight: 600;
+}
+.item{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.fecha{
+    width: auto;
+}
+.boton {
+    border: 0px;
+    padding: 10px;
+    margin-right: 10px;
+    color: #ebebeb;
+    background-color: #03264C;
+    border-radius: 4px;
+}

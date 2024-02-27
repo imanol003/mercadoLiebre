@@ -1,0 +1,276 @@
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin: 0;
+}
+.header{
+    background-color: #EAC926;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 3px;
+}
+.logo{
+    padding: 20px 5px 0px 20px;
+    width: 50%;
+    display: inline;
+}
+.barraBuscar{
+    display: inline;
+}
+.buscador{
+    width: 40%;
+    display: inline;
+}
+.subTitulo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.burgerMenu{
+    padding-bottom: 15px;
+}
+.fas.fa-bars{
+    background-color: #005ac2;
+    color: white;
+    display:block;
+    max-width: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin:auto;
+}
+
+.navegador{
+    font-size: 12px;
+    display:none;
+}
+.listaNav{
+
+}
+.opcionesNav > a{
+    color:black;
+    text-decoration: none;
+}
+
+.main{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+.mainImg{
+    width: 100%;
+}
+.mainTitulo{
+    font-size: 20px;
+    color:#666;
+    text-align: center;
+}
+.cajaGeneral{
+    margin-top: 10px;
+}
+.producto{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 0px solid #ebebeb;
+    padding: 0px;
+    margin: 20px;
+}
+
+.logoEnvio{
+    width: 80%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.descripcionProducto > .logoEnvio{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 80%;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.descripcionProducto{
+    padding: 15px;
+    position: relative;
+    text-align: start;
+    border: solid 1px #ebebeb;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+.fa-truck{
+    display:block;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    position: absolute;
+    right:20px;
+    top: -15px;
+    color: #39b54a;
+    padding: 5px;
+    border: solid 2px #39b54a;
+    border-radius: 100px;
+    transition: all 500ms;
+}
+.fa-truck:hover{
+    transform: rotate(-0.25turn);
+}
+.precio{
+    color:#666;
+    display: inline;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+.descuento{
+    font-weight: 590;
+    color: #39b54a;
+    display: inline;
+    font-size: 1rem;
+}
+.descripcion{
+    color:#666;
+    font-weight: 599;
+    font-size: 16px;
+    padding-top: 12px;
+}
+.tituloOfertas{
+    font-size: 20px;
+    color:#666;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px
+}
+.piePag{
+
+}
+.opcionPie{
+    font-size: 20px;
+}
+.descripcionPie{
+    color: #666;
+    font-size: 12px;
+}
+.Copyright{
+    color: #666;
+    font-size: 12px;
+}
+.fa-regular.fa-credit-card{
+    color:blue;
+    font-size: 25px;
+}
+.fa-solid.fa-gift{
+    color:blue;
+    font-size: 25px;
+}
+.fa-solid.fa-user-shield{
+    color:blue;
+    font-size: 25px;
+}
+
+.producto:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .descripcion{
+        display: block;
+    }
+}
+
+@media (min-width: 769px){
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+    padding: 0;
+    margin-left: 20px;
+}
+.buscador{
+    width: 200px;
+    height: 5%;
+    display: inline;
+
+}
+.fa-solid.fa-magnifying-glass{
+display: none;
+}
+.subTitulo{
+    display: inline;
+    width: 30%;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.fas.fa-bars{
+    display:none;
+}
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.listaNav{
+    display: inline;
+}
+.opcionesNav{
+    display: inline;
+    margin-right: 10px;
+}
+.cajaGeneral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.producto{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
+    margin: 20px;
+    display: flex;
+    border-top: 0px solid #ebebeb;
+    padding: 0px;
+}
+.logoEnvio{
+    width: 100%;
+}
+.descripcionProducto{
+    width: 100%;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.precio{
+
+}
+.descuento{
+
+}
+.descripcion{
+
+}
+}
+@media (min-width: 1200px){
+.producto{
+    width: 20%;
+}
+}
