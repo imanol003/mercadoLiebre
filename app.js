@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-const port = 3003;
+
 const path = require("path");
 
 app.use(express.static("public"));
 
+
+const port = process.env.PORT || 3030;
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   });

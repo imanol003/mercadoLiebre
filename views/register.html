@@ -11,43 +11,44 @@
         <img class = "logo" src="./images/logo-mercado-liebre.svg">
     </header>
     <main class="main">
-        <form class="formulario" action="/registro" method="POST">
 
-            <input class="item" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido:" required>
-            
-            <input class="item" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario:" required>
-            
-            <input class="item" type="email" id="email" name="email"  placeholder="Email:" required>
-            
-            <label class="titulo" for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input class="item" type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-            
-            <input class="item" type="text" id="domicilio" name="domicilio" placeholder="Domicilio:" required>
-        
-        <div class="perfil-usuario">
-            <label class="titulo" for="perfilUsuario">Perfil del usuario:</label>
-            <input type="radio" name="perfilUsu" value="comprar">Comprar</input>
-            <input type="radio" name="perfilUsu" value="vender">Vender</input>
-        </div>
-        <div class="categoria-inte">
-            <label class="titulo" for="categoriasInteres">Categorías de interés:</label>
-            <input type="checkbox" value="electro">Electro</input>
-            <input type="checkbox" value="moda">Moda</input>
-            <input type="checkbox" value="hogar">Hogar</input>
-            <input type="checkbox" value="jugueteria">Juguetería</input>
-            <input type="checkbox" value="vidaSana">Vida Sana</input>
-        </div>
-            
-            <label class="titulo" for="fotoUsuario">Foto de usuario:</label>
-            <input class="item" type="file" id="fotoUsuario" name="fotoUsuario" accept="image/*" required>
-            
-            <input class="item" type="password" id="contrasena" name="contrasena" placeholder="Contraseña:" required>
-            
-            <input class="item" type="password" id="confirmarContrasena" name="confirmarContrasena" placeholder="Confirmar Contraseña:" required>
-            
-            <button class="item" type="submit">Enviar</button>
-            <button class="item" type="reset">Borrar Datos</button>
+    <section class="formulario">
+        <form action="/registro" method="POST">
+
+            <p class="item"><label>Nombre y Apellido </p><p><input type="text" name="nombre" minlength="2" class="texto"></label></p>
+
+            <p class="item"><label>Nombre de usuari@ </p><p><input type="text" name="usuario" minlength="2" class="texto"></label></p>
+
+            <p class="item"><label>Email </p><p><input type="email" name="email" class="texto"></label></p>
+
+            <p class="item"><label>Fecha de Nacimiento</p>
+                <p><input type="date" name="fechaNacimiento" class="fecha"></label></p>
+
+            <p class="item"><label>Domicilio </p><p><input type="text" name="domicilio" class="texto"></label></p>
+
+            <p class="item"><label for="perfil">Querés comprar o vender?</label></p>
+            <p class="item"><input type="radio" name="perfil" value="vender"> Vender</p>
+            <p class="item"><input type="radio" name="perfil" value="Comprar"> Comprar</p>
+
+            <p class="item"><label for="intereses">Seleccioná tus categorías de interés</label></p>
+            <p class="item"><input type="checkbox" name="intereses" id="intereses" value="electro"> Electro</p>
+            <p class="item"><input type="checkbox" name="intereses" id="intereses" value="moda"> Moda</p>
+            <p class="item"><input type="checkbox" name="intereses" id="intereses" value="hogar"> Hogar</p>
+            <p class="item"><input type="checkbox" name="intereses" id="intereses" value="juguetes"> Juguetería</p>
+            <p class="item"><input type="checkbox" name="intereses" id="intereses" value="vidaSana"> Vida Sana</p>
+
+            <p class="item"><label>Subí tu foto de perfil </p>
+                <p><input type="file" name="fotoUser" id="fotoUsuario" accept=".jpg,.png,.bmp" class="boton-foto"></label></p>
+
+            <p class="item"><label>Contraseña </p><p><input type="password" name="password" id="password" class="texto"></label></p>
+
+            <p class="item"><label>Confirmar contraseña </p><p><input type="password" name="passwordCheck" id="passwordCheck" class="texto"></label></p>
+
+            <p class="item"><button type="submit" class="boton-enviar boton">Enviar</button>
+                <button type="reset" class="boton-borrar boton">Borrar</button></p>
+
         </form>
+    </section>
     </main>
 </body>
 </html>
